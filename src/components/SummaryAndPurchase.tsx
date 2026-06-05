@@ -8,12 +8,35 @@ export default function SummaryAndPurchase() {
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
   const [timeLeft, setTimeLeft] = useState(15 * 60);
+  const [spotsLeft, setSpotsLeft] = useState(7);
 
   useEffect(() => {
     const timer = setInterval(() => {
       setTimeLeft((prev) => (prev > 0 ? prev - 1 : 15 * 60));
     }, 1000);
     return () => clearInterval(timer);
+  }, []);
+
+  useEffect(() => {
+    const startTime = Date.now();
+    const interval = setInterval(() => {
+      const elapsedMs = Date.now() - startTime;
+      let currentSpots = 7;
+      if (elapsedMs >= 110000) {
+        currentSpots = 2;
+      } else if (elapsedMs >= 80000) {
+        currentSpots = 3;
+      } else if (elapsedMs >= 50000) {
+        currentSpots = 4;
+      } else if (elapsedMs >= 30000) {
+        currentSpots = 5;
+      } else if (elapsedMs >= 10000) {
+        currentSpots = 6;
+      }
+      setSpotsLeft(currentSpots);
+    }, 1000);
+
+    return () => clearInterval(interval);
   }, []);
 
   const formatTime = (seconds: number) => {
@@ -184,24 +207,40 @@ export default function SummaryAndPurchase() {
               <div className="space-y-4 mt-6 text-white">
                 
                 {!success ? (
-                  <button 
-                    onClick={handlePurchase}
-                    disabled={loading}
-                    className="w-full relative py-4 px-5 rounded-xl bg-white hover:bg-[#edf8f4] text-[#092615] font-display font-black text-center text-[10px] sm:text-xs tracking-wider uppercase active:scale-95 disabled:opacity-50 disabled:scale-100 transition-all shadow-lg flex items-center justify-center gap-2 cursor-pointer"
-                    id="checkout-cta"
-                  >
-                    {loading ? (
-                      <>
-                        <RefreshCw className="w-4 h-4 animate-spin" />
-                        PROCESANDO ACCESO...
-                      </>
-                    ) : (
-                      <>
-                        <ShoppingBag className="w-4 h-4" />
-                        QUIERO RECUPERAR EL CONTROL
-                      </>
-                    )}
-                  </button>
+                  <div className="space-y-3">
+                    <button 
+                      onClick={handlePurchase}
+                      disabled={loading}
+                      className="w-full relative py-4 px-5 rounded-xl bg-white hover:bg-[#edf8f4] text-[#092615] font-display font-black text-center text-[10px] sm:text-xs tracking-wider uppercase active:scale-95 disabled:opacity-50 disabled:scale-100 transition-all shadow-lg flex items-center justify-center gap-2 cursor-pointer"
+                      id="checkout-cta"
+                    >
+                      {loading ? (
+                        <>
+                          <RefreshCw className="w-4 h-4 animate-spin" />
+                          PROCESANDO ACCESO...
+                        </>
+                      ) : (
+                        <>
+                          <ShoppingBag className="w-4 h-4" />
+                          QUIERO RECUPERAR EL CONTROL
+                        </>
+                      )}
+                    </button>
+                    
+                    {/* Live scarcity indicator */}
+                    <div className="flex items-center justify-center gap-2 bg-emerald-950/60 border border-emerald-900/40 rounded-xl py-2 px-3 shadow-inner select-none">
+                      <div className="relative flex h-2 w-2">
+                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-rose-400 opacity-75"></span>
+                        <span className="relative inline-flex rounded-full h-2 w-2 bg-rose-500"></span>
+                      </div>
+                      <span className="text-[10px] sm:text-[11px] font-mono font-black text-rose-400 tracking-wider">
+                        SOLO {spotsLeft} CUPOS DISPONIBLES
+                      </span>
+                      <span className="text-[9px] sm:text-[10px] text-zinc-400 font-medium whitespace-nowrap">
+                        — Se agotan rápido
+                      </span>
+                    </div>
+                  </div>
                 ) : (
                   <div className="p-4 rounded-xl bg-emerald-950/80 border border-emerald-800 text-center space-y-2 text-white">
                     <span className="block text-sm font-bold text-[#00f58c] uppercase">¡Bienvenido al Reto!</span>

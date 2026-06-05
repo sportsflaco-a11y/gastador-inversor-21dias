@@ -5,7 +5,6 @@ import { Card } from "./ui/Card";
 
 export default function WhatYouAreBuying() {
   const info = copywriting.whatYouAreBuying;
-  const expectations = info.expectations;
 
   return (
     <section className="relative py-20 bg-[#ecf7f2] border-t border-b border-[#c8ebd7] overflow-hidden" id="que-compras">
@@ -16,7 +15,7 @@ export default function WhatYouAreBuying() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Core Block 1: Lo que realmente estás comprando */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center mb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
           
           {/* Card Left */}
           <div className="lg:col-span-12 xl:col-span-5 p-8 rounded-3xl bg-white border border-[#bce4cc] shadow-xl relative overflow-hidden group">
@@ -65,65 +64,6 @@ export default function WhatYouAreBuying() {
             </div>
           </div>
 
-        </div>
-
-        {/* Section Divider */}
-        <hr className="border-[#c8ebd7] mb-20" />
-
-        {/* Core Block 2: ¿Qué puedes esperar? */}
-        <div className="space-y-12">
-          
-          <SectionHeader 
-            tag="RESULTADOS VISIBLES"
-            title="¿QUÉ PUEDES ESPERAR?"
-            theme="light"
-          />
-
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
-            {expectations.map((exp) => (
-              <div 
-                key={exp.num}
-                id={`expectation-card-${exp.num}`}
-                className="flex flex-col justify-between p-6 sm:p-8 rounded-3xl bg-white border border-[#bce4cc] shadow-sm hover:shadow-md transition-shadow group relative"
-              >
-                <div className="space-y-5">
-                  {/* Number Badge */}
-                  <div className="flex items-center justify-between">
-                    <span className="w-8 h-8 rounded-lg bg-[#edf8f4] border border-[#bce4cc] flex items-center justify-center font-mono font-black text-emerald-800 group-hover:text-emerald-700 transition-colors text-sm">
-                      {exp.num}
-                    </span>
-                    <span className="text-[9px] font-mono tracking-widest text-[#0f3d23] uppercase">PROCESO</span>
-                  </div>
-
-                  {/* Title */}
-                  <h3 className="font-display font-bold text-lg text-[#092615] group-hover:text-emerald-800 transition-colors leading-snug">
-                    {exp.title}
-                  </h3>
-
-                  {/* Bullet points mapping exact copy */}
-                  <div className="space-y-3 pt-4 border-t border-[#edf8f4]">
-                    {exp.points.map((pt, index) => (
-                      <div key={index} className="flex items-start gap-2">
-                        <span className="w-1.5 h-1.5 rounded-full bg-emerald-600 mt-1.5 shrink-0" />
-                        <p className="text-xs text-zinc-700 leading-relaxed">{pt}</p>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Footer block */}
-                <div className="mt-6 pt-3 border-t border-[#edf8f4] flex items-center justify-between text-[9px] font-mono text-emerald-800">
-                  <span>ORDEN COMPROBADO</span>
-                  <span>RESULTADOS CONSTANTES</span>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* Slogan */}
-          <div className="text-center text-xs font-mono text-emerald-900 uppercase italic">
-            "No trabajes únicamente para pagar cuentas temporales. Trabaja para construir tu tranquilidad."
-          </div>
         </div>
 
       </div>

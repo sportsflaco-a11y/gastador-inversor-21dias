@@ -17,12 +17,16 @@ import Testimonials from "./components/Testimonials";
 import SummaryAndPurchase from "./components/SummaryAndPurchase";
 import FAQSection from "./components/FAQSection";
 import FinalSummary from "./components/FinalSummary";
+import SocialProofNotifications from "./components/SocialProofNotifications";
 
 export default function App() {
   return (
     <div className="min-h-screen bg-[#09090b] text-zinc-100 font-sans selection:bg-brand selection:text-black overflow-hidden selection:rounded-lg">
       {/* Animated scroll progress bar at the very top */}
       <ScrollProgressBar />
+
+      {/* Social proof live notifications displayed on reaching offer section */}
+      <SocialProofNotifications />
 
       {/* Structural Global ambient background lights */}
       <div className="fixed top-0 left-0 right-0 h-[400px] bg-gradient-to-b from-brand/5 to-transparent pointer-events-none z-0" />

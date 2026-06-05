@@ -44,14 +44,6 @@ export default function Testimonials() {
       highlight: "El mejor dinero invertido",
       tag: "Compra Verificada",
     },
-    {
-      name: "Andrés F.",
-      role: "Financista Tradicional — Buenos Aires",
-      quote: "Pasé de vivir estresado vigilando cada centavo a construir un sistema automatizado que trabaja por mí. Ver el balance subir de forma sostenida mes tras mes me dio una tranquilidad mental invaluable.",
-      rating: 5,
-      highlight: "Tranquilidad mental real",
-      tag: "Compra Verificada",
-    },
   ];
 
   return (
@@ -128,7 +120,7 @@ export default function Testimonials() {
         </div>
 
         {/* Testimonials Grid layout */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
           {list.map((item, idx) => (
             <div 
               key={idx}
