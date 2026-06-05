@@ -1,0 +1,6 @@
+{
+  "name": "De Gastador Compulsivo a Inversor",
+  "description": "Landing page profesional y responsiva de reprogramación de hábitos financieros para pasar de gastador a inversor.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
