@@ -189,35 +189,32 @@ export const copywriting = {
     {
       badge: "EXCLUSIVO",
       num: "Bono #1",
-      title: "Radiografía de Tus Fugas de Dinero",
+      title: "EL DESAFÍO DE REPROGRAMACIÓN FINANCIERA DE 21 DÍAS",
       paragraphs: [
-        "El ejercicio definitivo para rastrear y detectar de forma matemática exactamente en qué grietas invisibles se desvanece tu dinero cada mes.",
-        "Aprenderás a tapar esas fugas constantes de capital que hoy te impiden acumular riqueza en piloto automático."
+        "Cómo Transformar Tu Relación con el Dinero en Tres Semanas y Construir Hábitos que Duren Toda la Vida"
       ],
       iconName: "Trophy",
-      visualLabel: "SISTEMA RADIOGRAFÍA"
+      visualLabel: "DESAFÍO REPROGRAMACIÓN"
     },
     {
       badge: "AUTOMATIZADO",
       num: "Bono #2",
-      title: "Plantilla Dinero Bajo Control",
+      title: "EL PLAN DE CONSTRUCCIÓN DE CAPITAL DE LOS PRIMEROS $1.000",
       paragraphs: [
-        "Una herramienta interactiva y automatizada para implementar todo el plan del reto en menos de una hora de configuración inicial.",
-        "Sin fórmulas indescifrables ni hojas de cálculo complejas: abrir, completar y ejecutar tu orden financiero diario con facilidad."
+        "Cómo Acumular Tu Primer Capital Sin Ganar Más Dinero, Sin Sentirte Restringido y Sin Sacrificar Tu Calidad de Vida"
       ],
       iconName: "FileSpreadsheet",
-      visualLabel: "PLANTILLA AUTOMATIZADA"
+      visualLabel: "CONSTRUCCIÓN DE CAPITAL"
     },
     {
       badge: "DESAFÍO",
       num: "Bono #3",
-      title: "Desafío Anti-Compras de 7 Días",
+      title: "EL MANUAL DEL NUEVO INVERSOR",
       paragraphs: [
-        "Un entrenamiento mental diseñado para reconfigurar tus impulsos psicológicos ante ofertas tentadoras y caprichos del momento.",
-        "Dominarás la capacidad de decisión racional para neutralizar el deseo compulsivo de gasto antes de que toque tu cuenta bancaria."
+        "Qué Hacer con Tu Primer Dinero Acumulado Para Comenzar a Construir Patrimonio con Inteligencia y Sin Cometer los Errores que Destruyen a la Mayoría de los Principiantes"
       ],
       iconName: "Zap",
-      visualLabel: "ENTRENAMIENTO EMOCIONAL"
+      visualLabel: "MANUAL INVERSOR"
     }
   ] as BonusItem[],
 

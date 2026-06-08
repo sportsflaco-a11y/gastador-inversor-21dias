@@ -25,7 +25,7 @@ export default function TheProblem() {
         {/* Big Punchy Header */}
         <h2 className="font-display text-2xl sm:text-4xl lg:text-5xl font-black text-center text-[#092615] leading-tight mb-16 uppercase">
           Tu problema no es que ganas poco. <br />
-          Tu problema es que el dinero entra... <span className="text-red-700 underline decoration-red-500/50 decoration-wavy">y desaparece.</span>
+          Tu problema es que el dinero entra... <span className="text-red-700">y desaparece.</span>
         </h2>
 
         {/* Interactive Mindset Box */}

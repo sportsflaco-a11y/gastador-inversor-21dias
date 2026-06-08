@@ -63,15 +63,15 @@ export default function ExclusiveBonuses() {
                       {/* Product mockup box visual */}
                       {idx === 0 ? (
                         <div className="aspect-video w-3/4 mx-auto rounded-2xl bg-zinc-900 border border-zinc-800 overflow-hidden relative shadow-2xl group-hover:border-brand/40 transition-all duration-300">
-                          <img 
-                            src="https://lh3.googleusercontent.com/d/1Jn3nX4A5AurmND0SzBbnLNKoKFKlhfTV" 
+                           <img 
+                            src="https://lh3.googleusercontent.com/d/1Gyrju5sKr7RIFMt0OtQkgMqVegUIWgzg" 
                             alt={bonus.title}
-                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                            className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                             referrerPolicy="no-referrer"
                             onError={(e) => {
                               const img = e.currentTarget;
-                              if (!img.src.includes("/sistema-radiografia.jpg")) {
-                                img.src = "/sistema-radiografia.jpg";
+                              if (!img.src.includes("/desafio-reprogramacion.jpg")) {
+                                img.src = "/desafio-reprogramacion.jpg";
                               }
                             }}
                           />
@@ -79,14 +79,14 @@ export default function ExclusiveBonuses() {
                       ) : idx === 1 ? (
                         <div className="aspect-video w-3/4 mx-auto rounded-2xl bg-zinc-900 border border-zinc-800 overflow-hidden relative shadow-2xl group-hover:border-brand/40 transition-all duration-300">
                           <img 
-                            src="https://lh3.googleusercontent.com/d/15hFqMtoRGHFyww0AEjRQy2DM3ZDhcDtr" 
+                            src="https://lh3.googleusercontent.com/d/1DPr26OeG6kRiqpOunrJ352KgYrfm7khq" 
                             alt={bonus.title}
-                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                            className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                             referrerPolicy="no-referrer"
                             onError={(e) => {
                               const img = e.currentTarget;
-                              if (!img.src.includes("/plantilla-automatizada.jpg")) {
-                                img.src = "/plantilla-automatizada.jpg";
+                              if (!img.src.includes("/plan-construccion.jpg")) {
+                                img.src = "/plan-construccion.jpg";
                               }
                             }}
                           />
@@ -94,14 +94,14 @@ export default function ExclusiveBonuses() {
                       ) : idx === 2 ? (
                         <div className="aspect-video w-3/4 mx-auto rounded-2xl bg-zinc-900 border border-zinc-800 overflow-hidden relative shadow-2xl group-hover:border-brand/40 transition-all duration-300">
                           <img 
-                            src="https://lh3.googleusercontent.com/d/1155zCdQsq8x4HDYlJXs16rIVt-TR4KVZ" 
+                            src="https://lh3.googleusercontent.com/d/1kBvUMdfn38F7W0Ilmf0s3_tWMfhpHyl-" 
                             alt={bonus.title}
-                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                            className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                             referrerPolicy="no-referrer"
                             onError={(e) => {
                               const img = e.currentTarget;
-                              if (!img.src.includes("/entrenamiento-emocional.jpg")) {
-                                img.src = "/entrenamiento-emocional.jpg";
+                              if (!img.src.includes("/manual-inversor.jpg")) {
+                                img.src = "/manual-inversor.jpg";
                               }
                             }}
                           />

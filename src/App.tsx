@@ -12,7 +12,6 @@ import ImagineSection from "./components/ImagineSection";
 import ForWhom from "./components/ForWhom";
 import WhatYouAreBuying from "./components/WhatYouAreBuying";
 import ExclusiveBonuses from "./components/ExclusiveBonuses";
-import CountSection from "./components/CountSection";
 import Testimonials from "./components/Testimonials";
 import SummaryAndPurchase from "./components/SummaryAndPurchase";
 import FAQSection from "./components/FAQSection";
@@ -56,9 +55,6 @@ export default function App() {
 
         {/* SECTION 6: EXCLUSIVE BONUSES "BONOS EXCLUSIVOS" */}
         <ExclusiveBonuses />
-
-        {/* SECTION 7: COUNT SECTION & CALCULATOR "HAZ CUENTAS..." */}
-        <CountSection />
 
         {/* SECTION 7.5: TESTIMONIALS "HISTORIAS DE TRANSFORMACIÓN..." */}
         <Testimonials />

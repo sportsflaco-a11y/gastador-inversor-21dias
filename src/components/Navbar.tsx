@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Menu, X, Landmark, Compass, HelpCircle, Calculator, ChevronRight } from "lucide-react";
+import { Menu, X, Landmark, Compass, HelpCircle, ChevronRight } from "lucide-react";
 import { Button } from "./ui/Button";
 
 export default function Navbar() {
@@ -9,7 +9,6 @@ export default function Navbar() {
     { name: "El Problema", href: "#problema", icon: Compass },
     { name: "¿Qué Desbloquearás?", href: "#desbloqueas", icon: Landmark },
     { name: "¿Para Quién?", href: "#para-quien", icon: HelpCircle },
-    { name: "Haz Cuentas", href: "#calculadora", icon: Calculator },
   ];
 
   const scrollToSection = (id: string) => {

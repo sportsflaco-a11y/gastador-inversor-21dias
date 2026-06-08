@@ -61,9 +61,9 @@ export default function SummaryAndPurchase() {
   ];
 
   const bonusInclusions = [
-    { name: "Radiografía Completa de Tus Fugas de Dinero", value: "$10 USD" },
-    { name: "Plantilla Dinero Bajo Control", value: "$12 USD" },
-    { name: "Desafío Anti-Compras Impulsivas de 7 Días", value: "$15 USD" },
+    { name: "Bono #1: EL DESAFÍO DE REPROGRAMACIÓN FINANCIERA DE 21 DÍAS", value: "$10 USD" },
+    { name: "Bono #2: EL PLAN DE CONSTRUCCIÓN DE CAPITAL DE LOS PRIMEROS $1.000", value: "$12 USD" },
+    { name: "Bono #3: EL MANUAL DEL NUEVO INVERSOR", value: "$15 USD" },
   ];
 
   return (
