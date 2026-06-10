@@ -70,7 +70,13 @@ export default function Hero() {
               transition={{ duration: 0.7, delay: 0.4 }}
               className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-4"
             >
-              <Button href="#oferta" id="hero-cta" className="shadow-[0_0_30px_rgba(203,250,5,0.25)] hover:shadow-[0_0_40px_rgba(203,250,5,0.45)]">
+              <Button 
+                href="https://pay.hotmart.com/L106244109G?checkoutMode=10" 
+                target="_blank"
+                rel="noopener noreferrer"
+                id="hero-cta" 
+                className="shadow-[0_0_30px_rgba(203,250,5,0.25)] hover:shadow-[0_0_40px_rgba(203,250,5,0.45)]"
+              >
                 {data.ctaMain}
               </Button>
               <Button href="#problema" variant="secondary" showIcon={false}>

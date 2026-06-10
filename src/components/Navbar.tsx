@@ -50,7 +50,9 @@ export default function Navbar() {
             {/* CTA Button */}
             <div className="shrink-0">
               <Button 
-                href="#oferta"
+                href="https://pay.hotmart.com/L106244109G?checkoutMode=10"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="py-2.5 px-5 !text-sm"
                 showIcon={true}
               >
@@ -74,7 +76,9 @@ export default function Navbar() {
             {/* Centered CTA button for mobile */}
             <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
               <a 
-                href="#oferta"
+                href="https://pay.hotmart.com/L106244109G?checkoutMode=10"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center py-2 px-3.5 bg-brand hover:bg-[#CBFA05] text-[#09090b] text-[10px] sm:text-xs font-display font-extrabold tracking-wider uppercase rounded-full shadow-[0_0_12px_rgba(203,250,5,0.25)] hover:shadow-[0_0_20px_rgba(203,250,5,0.45)] transition-all duration-350 active:scale-95 text-center whitespace-nowrap"
               >
                 Empezar Ahora
@@ -115,7 +119,9 @@ export default function Navbar() {
             ))}
             <hr className="border-zinc-800/80 my-2" />
             <Button 
-              href="#oferta"
+              href="https://pay.hotmart.com/L106244109G?checkoutMode=10"
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setIsOpen(false)}
               className="w-full py-3.5 px-4 shadow-[0_0_15px_rgba(203,250,5,0.2)]"
             >

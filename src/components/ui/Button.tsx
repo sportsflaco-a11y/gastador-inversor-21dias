@@ -9,6 +9,8 @@ interface ButtonProps {
   className?: string;
   showIcon?: boolean;
   id?: string;
+  target?: string;
+  rel?: string;
 }
 
 export function Button({
@@ -18,7 +20,9 @@ export function Button({
   variant = "primary",
   className = "",
   showIcon = true,
-  id
+  id,
+  target,
+  rel
 }: ButtonProps) {
   const baseClasses = "inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl font-display font-bold text-center transition-all duration-300 active:scale-95 text-xs sm:text-sm md:text-base";
   
@@ -37,7 +41,7 @@ export function Button({
 
   if (href) {
     return (
-      <a href={href} id={id} className={`${baseClasses} ${variants[variant]} group ${className}`}>
+      <a href={href} id={id} target={target} rel={rel} className={`${baseClasses} ${variants[variant]} group ${className}`}>
         {content}
       </a>
     );
