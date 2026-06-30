@@ -14,7 +14,7 @@ export function SectionHeader({ tag, title, desc, variant = "brand", theme = "da
   const isLight = theme === "light";
   
   return (
-    <div className={`max-w-3xl mx-auto text-center mb-16 sm:mb-20 space-y-4 ${className}`}>
+    <div className={`max-w-3xl mx-auto text-center mb-6 sm:mb-8 space-y-3.5 ${className}`}>
       <div className="flex justify-center">
         <Badge variant={isLight && variant === "brand" ? "zinc" : variant}>{tag}</Badge>
       </div>
@@ -22,7 +22,7 @@ export function SectionHeader({ tag, title, desc, variant = "brand", theme = "da
         {title}
       </h2>
       {desc && (
-        <p className={`text-sm sm:text-base max-w-xl mx-auto leading-relaxed ${isLight ? "text-zinc-650" : "text-zinc-400"}`}>
+        <p className={`text-sm sm:text-base max-w-xl mx-auto leading-relaxed ${isLight ? "text-zinc-700 font-medium" : "text-zinc-400"}`}>
           {desc}
         </p>
       )}

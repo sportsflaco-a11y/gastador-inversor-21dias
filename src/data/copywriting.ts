@@ -37,14 +37,14 @@ export interface ExpectationItem {
 
 export const copywriting = {
   hero: {
-    badge: "Reto Financiero de 21 Días",
-    title: "De Gastador Compulsivo",
-    titleAccent: "Inversor",
-    titleSuffix: "en 21 Días",
-    promo: "Reprograma tus hábitos y comienza a acumular capital en tres semanas.",
-    subPromo: "Sin dejar de disfrutar la vida, sin presupuestos imposibles, sin sentirte restringido. Solo decisiones estratégicas — incluso si siempre gastaste todo.",
+    badge: "Aplicación Web + Reto de 21 Días",
+    title: "EL ARQUITECTO FINANCIERO +",
+    titleAccent: "DE GASTADOR COMPULSIVO A INVERSOR",
+    titleSuffix: "EN 21 DÍAS (Reto 21 días)",
+    promo: "La aplicación definitiva para registrar, estructurar y potenciar tus finanzas, junto con el Reto de 21 días.",
+    subPromo: "Toma las riendas de tus ingresos sin hojas de cálculo obsoletas. Tu software personal de control y tu plan paso a paso, unidos en un solo combo de alto impacto.",
     ctaMain: "EMPEZAR MI TRANSFORMACIÓN AHORA",
-    ctaSec: "Hablemos de tu caso"
+    ctaSec: "Ver Cómo Funciona"
   },
   
   theProblem: {

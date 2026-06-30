@@ -9,16 +9,16 @@ interface NotificationItem {
 }
 
 const mockPurchases: NotificationItem[] = [
-  { name: "María", city: "Ciudad de México", plan: "Plan VIP de Acceso Inmediato" },
-  { name: "Juan", city: "Bogotá", plan: "Reto Completo de 21 Días" },
-  { name: "Carlos", city: "Lima", plan: "Plan Reto + Bonos VIP" },
-  { name: "Sofía", city: "Santiago", plan: "Reto Completo de 21 Días" },
-  { name: "Alejandro", city: "Buenos Aires", plan: "Inversor en 21 Días" },
-  { name: "Diana", city: "Guadalajara", plan: "Plan VIP de Acceso Inmediato" },
-  { name: "Mateo", city: "Madrid", plan: "Reto Completo de 21 Días" },
-  { name: "Camila", city: "Medellín", plan: "Plan Reto + Bonos VIP" },
-  { name: "Diego", city: "Monterrey", plan: "Inversor en 21 Días" },
-  { name: "Valentina", city: "Quito", plan: "Reto Completo de 21 Días" }
+  { name: "María", city: "Ciudad de México", plan: "PACK COMPLETO VIP" },
+  { name: "Juan", city: "Bogotá", plan: "PACK PRO" },
+  { name: "Carlos", city: "Lima", plan: "PACK COMPLETO VIP" },
+  { name: "Sofía", city: "Santiago", plan: "PACK ELITE" },
+  { name: "Alejandro", city: "Buenos Aires", plan: "PACK PRO" },
+  { name: "Diana", city: "Guadalajara", plan: "PACK COMPLETO VIP" },
+  { name: "Mateo", city: "Madrid", plan: "PACK ELITE" },
+  { name: "Camila", city: "Medellín", plan: "PACK COMPLETO VIP" },
+  { name: "Diego", city: "Monterrey", plan: "PACK PRO" },
+  { name: "Valentina", city: "Quito", plan: "PACK COMPLETO VIP" }
 ];
 
 export default function SocialProofNotifications() {

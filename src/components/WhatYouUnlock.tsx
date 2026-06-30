@@ -39,22 +39,23 @@ export default function WhatYouUnlock() {
   const unlocks = copywriting.unlocks;
 
   return (
-    <section className="relative py-24 bg-[#09090b] overflow-hidden" id="desbloqueas">
+    <section className="relative pt-6 pb-8 bg-[#09090b] overflow-hidden" id="desbloqueas">
       {/* Background visual graphics */}
       <div className="absolute top-1/2 left-0 w-[500px] h-[500px] rounded-full bg-brand/5 blur-[150px] pointer-events-none" />
       <div className="absolute bottom-10 right-10 w-[300px] h-[300px] rounded-full bg-brand/3 blur-[120px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
-        {/* Tokenized Header Block */}
+        {/* Tokenized Header Block with tight margin bottom */}
         <SectionHeader 
           tag="LA TRANSFORMACIÓN EN ACCIÓN"
           title="¿QUÉ DESBLOQUEARÁS?"
           desc="Las 5 herramientas sistémicas que sustituyen la fuerza de voluntad destructiva por un motor automatizado estructurado de acumulación económica."
+          className="!mb-6 sm:!mb-8"
         />
 
-        {/* The Grid - Bento Inspired Layout */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        {/* The Grid - Bento Inspired Layout with smaller gap */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
           {unlocks.map((item, idx) => {
             const IconComponent = iconMap[item.iconName] || Layers;
             const isLast = idx === 4;
@@ -63,47 +64,32 @@ export default function WhatYouUnlock() {
               <Card 
                 key={item.num}
                 id={`unlock-card-${item.num}`}
-                className={`!p-5 sm:!p-6.5 text-left flex flex-col justify-between ${isLast ? "md:col-span-2 lg:col-span-1" : ""}`}
+                className={`!p-4 sm:!p-5 text-left flex flex-col justify-between ${isLast ? "md:col-span-2 lg:col-span-1" : ""}`}
               >
-                <div className="space-y-4">
+                <div className="space-y-3">
                   {/* Top Row: Num & Icon */}
                   <div className="flex items-center justify-between">
-                    <span className="font-mono text-3xl sm:text-4xl font-extrabold text-zinc-800/80 group-hover:text-brand/30 transition-colors duration-300">
+                    <span className="font-mono text-2xl sm:text-3xl font-extrabold text-zinc-800/80 group-hover:text-brand/30 transition-colors duration-300">
                       {item.num}
                     </span>
-                    <div className="p-2.5 rounded-xl bg-zinc-950 border border-zinc-850 text-[#CBFA05] group-hover:bg-[#CBFA05] group-hover:text-[#09090b] transition-all duration-300">
-                      <IconComponent className="w-4.5 h-4.5" />
+                    <div className="p-2 rounded-xl bg-zinc-950 border border-zinc-850 text-[#CBFA05] group-hover:bg-[#CBFA05] group-hover:text-[#09090b] transition-all duration-300">
+                      <IconComponent className="w-4 h-4" />
                     </div>
                   </div>
 
                   {/* Text Description */}
-                  <div className="space-y-2">
-                    <h3 className="font-display font-bold text-base sm:text-lg text-white tracking-tight group-hover:text-[#CBFA05] transition-colors duration-200">
+                  <div className="space-y-1.5">
+                    <h3 className="font-display font-bold text-sm sm:text-base text-white tracking-tight group-hover:text-[#CBFA05] transition-colors duration-200">
                       {item.title}
                     </h3>
-                    <p className="text-zinc-400 text-xs sm:text-sm leading-relaxed">
+                    <p className="text-zinc-400 text-xs leading-relaxed">
                       {item.description}
                     </p>
-                  </div>
-
-                  {/* High-density Deliverables Bullet Points */}
-                  <div className="space-y-2 pt-3 border-t border-zinc-850/40">
-                    <span className="text-[10px] font-mono text-[#CBFA05] uppercase tracking-wider block font-bold">
-                      INCLUYE EN EL RETO:
-                    </span>
-                    <div className="space-y-1.5">
-                      {deliverablesMap[item.num]?.map((bullet, bIdx) => (
-                        <div key={bIdx} className="flex items-start gap-2 text-xs text-zinc-300/95">
-                          <span className="text-[#CBFA05] font-bold shrink-0 mt-0.5 leading-none">✓</span>
-                          <span className="leading-tight">{bullet}</span>
-                        </div>
-                      ))}
-                    </div>
                   </div>
                 </div>
 
                 {/* Micro Footer decoration */}
-                <div className="mt-6 pt-3 border-t border-zinc-850/50 flex items-center justify-between text-[10px] font-mono text-zinc-500">
+                <div className="mt-4 pt-2.5 border-t border-zinc-850/50 flex items-center justify-between text-[9px] font-mono text-zinc-500">
                   <span>SISTEMA 21 DÍAS</span>
                   <span className="text-zinc-300 font-bold uppercase group-hover:text-[#CBFA05] transition-colors">
                     {item.highlight}
@@ -114,9 +100,9 @@ export default function WhatYouUnlock() {
           })}
         </div>
 
-        {/* Interactive Bottom Accent Callout */}
-        <div className="mt-16 text-center">
-          <p className="text-xs sm:text-sm font-mono text-zinc-500 uppercase tracking-widest">
+        {/* Interactive Bottom Accent Callout with tight spacing */}
+        <div className="mt-8 text-center">
+          <p className="text-[10px] sm:text-xs font-mono text-zinc-500 uppercase tracking-widest max-w-2xl mx-auto">
             "No se trata de ahorrar más. Se trata de retener inteligentemente lo que hoy se desvanece de tu cuenta bancaria."
           </p>
         </div>

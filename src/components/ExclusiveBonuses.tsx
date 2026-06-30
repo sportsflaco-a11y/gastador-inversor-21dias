@@ -19,7 +19,7 @@ export default function ExclusiveBonuses() {
   const bonuses = copywriting.bonuses;
 
   return (
-    <section className="relative py-24 bg-[#09090b] overflow-hidden border-b border-zinc-900" id="bonos">
+    <section className="relative pt-6 pb-8 bg-[#09090b] overflow-hidden border-b border-zinc-900" id="bonos">
       {/* Decorative Orbs */}
       <div className="absolute top-1/2 left-0 w-[500px] h-[500px] rounded-full bg-brand/5 blur-[150px] pointer-events-none" />
 
@@ -29,135 +29,78 @@ export default function ExclusiveBonuses() {
         <SectionHeader 
           tag="AGREGANDO VALOR INSUPERABLE"
           title="BONOS EXCLUSIVOS"
-          desc="Herramientas complementarias de alto impacto diseñadas específicamente para guiarte en tu ejecución y asegurar que no te rindas en el camino."
+          desc="Herramientas complementarias de alto impacto diseñadas para asegurar tus resultados financieros."
+          className="!mb-6 sm:!mb-8"
         />
 
-        {/* Bonuses Cards Column */}
-        <div className="space-y-12">
+        {/* Bonuses Cards in 3-column grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-6">
           {bonuses.map((bonus, idx) => {
-            const Icon = iconMap[bonus.iconName] || Trophy;
-            const bVal = bonusValues[idx] || "Valor real: $25.00";
+            const bVal = bonusValues[idx] || "Valor real: $15.00";
+            
+            // Define corresponding image for each bonus index
+            const imgUrl = idx === 0 
+              ? "https://lh3.googleusercontent.com/d/1Gyrju5sKr7RIFMt0OtQkgMqVegUIWgzg"
+              : idx === 1 
+                ? "https://lh3.googleusercontent.com/d/1DPr26OeG6kRiqpOunrJ352KgYrfm7khq"
+                : "https://lh3.googleusercontent.com/d/1kBvUMdfn38F7W0Ilmf0s3_tWMfhpHyl-";
+
+            const fallbackImg = idx === 0 
+              ? "/desafio-reprogramacion.jpg"
+              : idx === 1 
+                ? "/plan-construccion.jpg"
+                : "/manual-inversor.jpg";
+
             return (
               <div 
                 key={bonus.num}
-                className="group relative p-8 sm:p-12 rounded-3xl bg-[#121214] border border-zinc-800 hover:border-brand/35 transition-all duration-300"
+                className="group relative p-5 rounded-2xl bg-[#121214] border border-zinc-800 hover:border-brand/35 transition-all duration-300 flex flex-col justify-between h-full shadow-lg"
               >
                 {/* Visual Accent Number absolute top right */}
-                <div className="absolute top-4 right-6 font-mono text-7xl font-extrabold text-zinc-900 select-none group-hover:text-zinc-850/50 transition-colors pointer-events-none">
+                <div className="absolute top-2.5 right-4 font-mono text-4xl sm:text-5xl font-extrabold text-zinc-900/60 select-none group-hover:text-zinc-850/40 transition-colors pointer-events-none">
                   0{idx + 1}
                 </div>
 
-                <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start relative z-10">
-                  
-                  {/* Left Column: Visual Representation Box */}
-                  <div className="lg:col-span-4 flex flex-col justify-between h-full space-y-6">
-                    <div className="space-y-4">
-                      {/* Badge and Num Header */}
-                      <div className="flex items-center gap-3">
-                        <span className="text-[10px] font-mono tracking-widest text-[#CBFA05] uppercase bg-brand/15 border border-brand/25 px-2.5 py-0.5 rounded font-bold">
-                          {bonus.badge}
-                        </span>
-                        <span className="text-zinc-500 font-mono text-xs font-semibold uppercase">{bonus.num}</span>
-                      </div>
-                      
-                      {/* Product mockup box visual */}
-                      {idx === 0 ? (
-                        <div className="aspect-video w-3/4 mx-auto rounded-2xl bg-zinc-900 border border-zinc-800 overflow-hidden relative shadow-2xl group-hover:border-brand/40 transition-all duration-300">
-                           <img 
-                            src="https://lh3.googleusercontent.com/d/1Gyrju5sKr7RIFMt0OtQkgMqVegUIWgzg" 
-                            alt={bonus.title}
-                            className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
-                            referrerPolicy="no-referrer"
-                            onError={(e) => {
-                              const img = e.currentTarget;
-                              if (!img.src.includes("/desafio-reprogramacion.jpg")) {
-                                img.src = "/desafio-reprogramacion.jpg";
-                              }
-                            }}
-                          />
-                        </div>
-                      ) : idx === 1 ? (
-                        <div className="aspect-video w-3/4 mx-auto rounded-2xl bg-zinc-900 border border-zinc-800 overflow-hidden relative shadow-2xl group-hover:border-brand/40 transition-all duration-300">
-                          <img 
-                            src="https://lh3.googleusercontent.com/d/1DPr26OeG6kRiqpOunrJ352KgYrfm7khq" 
-                            alt={bonus.title}
-                            className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
-                            referrerPolicy="no-referrer"
-                            onError={(e) => {
-                              const img = e.currentTarget;
-                              if (!img.src.includes("/plan-construccion.jpg")) {
-                                img.src = "/plan-construccion.jpg";
-                              }
-                            }}
-                          />
-                        </div>
-                      ) : idx === 2 ? (
-                        <div className="aspect-video w-3/4 mx-auto rounded-2xl bg-zinc-900 border border-zinc-800 overflow-hidden relative shadow-2xl group-hover:border-brand/40 transition-all duration-300">
-                          <img 
-                            src="https://lh3.googleusercontent.com/d/1kBvUMdfn38F7W0Ilmf0s3_tWMfhpHyl-" 
-                            alt={bonus.title}
-                            className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
-                            referrerPolicy="no-referrer"
-                            onError={(e) => {
-                              const img = e.currentTarget;
-                              if (!img.src.includes("/manual-inversor.jpg")) {
-                                img.src = "/manual-inversor.jpg";
-                              }
-                            }}
-                          />
-                        </div>
-                      ) : (
-                        <div className="aspect-video w-full rounded-2xl bg-zinc-950 border border-zinc-850 p-6 flex flex-col justify-between relative overflow-hidden shadow-inner uppercase font-mono">
-                          {/* Glow and background lines */}
-                          <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-brand/5 rounded-full blur-xl pointer-events-none" />
-                          <div className="absolute top-2 right-2 text-zinc-800 text-[10px] tracking-widest">PROP.21D</div>
-                          
-                          <div className="flex items-center gap-3">
-                            <div className="p-2 bg-brand/10 border border-brand/30 rounded-xl text-brand group-hover:bg-brand group-hover:text-black transition-all">
-                              <Icon className="w-5 h-5" />
-                            </div>
-                            <div>
-                              <span className="block text-[8px] text-zinc-500 font-sans font-bold leading-tight">MÓDULO DE ACCIÓN</span>
-                              <span className="block text-xs font-bold text-white tracking-wider">{bonus.visualLabel}</span>
-                            </div>
-                          </div>
-
-                          <div className="flex items-end justify-between border-t border-zinc-800/60 pt-3">
-                            <span className="text-[8px] text-zinc-500">FORMATO DIGITAL</span>
-                            <span className="text-[10px] text-brand font-bold">INCLUIDO $0</span>
-                          </div>
-                        </div>
-                      )}
+                <div className="space-y-3 relative z-10 flex flex-col h-full justify-between">
+                  <div>
+                    {/* Badge and Num Header */}
+                    <div className="flex items-center gap-2 mb-3">
+                      <span className="text-[9px] font-mono tracking-widest text-[#CBFA05] uppercase bg-brand/15 border border-brand/25 px-2 py-0.5 rounded font-bold">
+                        {bonus.badge}
+                      </span>
+                      <span className="text-zinc-500 font-mono text-[10px] font-semibold uppercase">{bonus.num}</span>
                     </div>
 
-                    {/* Value Badge */}
-                    <div className="text-xs text-zinc-500 font-mono bg-zinc-950/60 px-4 py-2 rounded-xl border border-zinc-850/80 inline-flex items-center gap-2 self-start font-medium">
-                      <CheckCircle className="w-4 h-4 text-brand" />
-                      {bVal}
+                    {/* Product mockup box visual (more compact) */}
+                    <div className="aspect-[16/10] w-full rounded-xl bg-zinc-950 border border-zinc-850 overflow-hidden relative shadow-md group-hover:border-brand/30 transition-all duration-300 mb-3 flex items-center justify-center">
+                      <img 
+                        src={imgUrl} 
+                        alt={bonus.title}
+                        className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
+                        referrerPolicy="no-referrer"
+                        onError={(e) => {
+                          const img = e.currentTarget;
+                          if (!img.src.includes(fallbackImg)) {
+                            img.src = fallbackImg;
+                          }
+                        }}
+                      />
                     </div>
-                  </div>
 
-                  {/* Right Column: Exact text copy layout */}
-                  <div className="lg:col-span-8 flex flex-col space-y-6 lg:pl-6">
-                    <h3 className="font-display font-black text-2xl sm:text-3.5xl text-white tracking-tight uppercase leading-tight group-hover:text-[#CBFA05] transition-colors">
+                    {/* Title & Description */}
+                    <h4 className="font-display font-black text-xs sm:text-sm text-white tracking-tight uppercase leading-snug group-hover:text-brand transition-colors line-clamp-2">
                       {bonus.title}
-                    </h3>
-                    
-                    <div className="space-y-4 text-zinc-400 text-sm sm:text-base leading-relaxed">
-                      {bonus.paragraphs.map((p, pIdx) => {
-                        const isMain = pIdx === 0;
-                        return (
-                          <p 
-                            key={pIdx} 
-                            className={isMain ? "text-zinc-100 font-semibold" : ""}
-                          >
-                            {p}
-                          </p>
-                        );
-                      })}
-                    </div>
+                    </h4>
+                    <p className="text-zinc-400 text-xs mt-2 leading-relaxed">
+                      {bonus.paragraphs[0]}
+                    </p>
                   </div>
 
+                  {/* Footer metadata of each card */}
+                  <div className="pt-3 border-t border-zinc-850/60 flex items-center justify-between mt-4">
+                    <span className="text-[10px] text-zinc-500 font-mono font-medium">{bVal}</span>
+                    <span className="text-[10px] text-brand font-mono font-bold uppercase tracking-wider">INCLUIDO $0</span>
+                  </div>
                 </div>
               </div>
             );

@@ -6,7 +6,7 @@ export default function TheProblem() {
   const data = copywriting.theProblem;
 
   return (
-    <section className="relative py-20 bg-[#ecf7f2] border-t border-b border-[#c8ebd7] overflow-hidden" id="problema">
+    <section className="relative pt-10 pb-6 bg-[#ecf7f2] border-t border-b border-[#c8ebd7] overflow-hidden" id="problema">
       
       {/* Decorative side accent lines */}
       <div className="absolute top-0 right-0 w-[1px] h-full bg-gradient-to-b from-brand/20 via-transparent to-transparent hidden lg:block" />
@@ -23,7 +23,7 @@ export default function TheProblem() {
         </div>
 
         {/* Big Punchy Header */}
-        <h2 className="font-display text-2xl sm:text-4xl lg:text-5xl font-black text-center text-[#092615] leading-tight mb-16 uppercase">
+        <h2 className="font-display text-2xl sm:text-4xl lg:text-5xl font-black text-center text-[#092615] leading-tight mb-6 sm:mb-8 uppercase">
           Tu problema no es que ganas poco. <br />
           Tu problema es que el dinero entra... <span className="text-red-700">y desaparece.</span>
         </h2>
@@ -82,7 +82,7 @@ export default function TheProblem() {
           </div>
 
           {/* Hard truth - Styled as a high contrast Dark box in the middle of light layout */}
-          <div className="p-6 sm:p-8 rounded-2xl bg-zinc-950 border border-zinc-900 text-zinc-100 my-6 space-y-3 shadow-2xl">
+          <div className="p-6 sm:p-8 rounded-2xl bg-zinc-950 border border-zinc-900 text-zinc-100 mt-6 mb-0 space-y-3 shadow-2xl">
             <div className="flex items-center gap-2">
               <AlertTriangle className="w-5 h-5 text-brand shrink-0" />
               <h4 className="font-display text-xs font-black tracking-wider uppercase text-brand">
@@ -97,20 +97,6 @@ export default function TheProblem() {
             </p>
           </div>
 
-          {/* Introdución De Gastador Compulsivo a Inversoren 21 días */}
-          <div className="text-center pt-6 space-y-4">
-            <p className="text-lg sm:text-xl font-bold font-display text-emerald-950 italic">
-              {data.calloutTitle}
-            </p>
-            <p className="font-normal text-zinc-700 max-w-xl mx-auto text-xs sm:text-sm">
-              {data.calloutDesc}
-            </p>
-          </div>
-
-        </div>
-
-        <div className="flex justify-center pt-8">
-          <ChevronRight className="w-6 h-6 text-emerald-700 animate-bounce rotate-90" />
         </div>
 
       </div>

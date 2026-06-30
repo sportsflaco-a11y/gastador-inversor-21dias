@@ -7,13 +7,12 @@ import Navbar from "./components/Navbar";
 import ScrollProgressBar from "./components/ScrollProgressBar";
 import Hero from "./components/Hero";
 import TheProblem from "./components/TheProblem";
-import WhatYouUnlock from "./components/WhatYouUnlock";
-import ImagineSection from "./components/ImagineSection";
+import ArchitectApp from "./components/ArchitectApp";
 import ForWhom from "./components/ForWhom";
 import WhatYouAreBuying from "./components/WhatYouAreBuying";
+import AccessCallToAction from "./components/AccessCallToAction";
 import ExclusiveBonuses from "./components/ExclusiveBonuses";
 import Testimonials from "./components/Testimonials";
-import SummaryAndPurchase from "./components/SummaryAndPurchase";
 import FAQSection from "./components/FAQSection";
 import FinalSummary from "./components/FinalSummary";
 import SocialProofNotifications from "./components/SocialProofNotifications";
@@ -41,11 +40,8 @@ export default function App() {
         {/* SECTION 1: THE PROBLEM "Tu problema no es que ganas poco..." */}
         <TheProblem />
 
-        {/* SECTION 2: WHAT YOU UNLOCK "¿QUÉ DESBLOQUEARÁS?" */}
-        <WhatYouUnlock />
-
-        {/* SECTION 3: IMAGINE SECTION "IMAGINA CÓMO SE SENTIRÍA..." */}
-        <ImagineSection />
+        {/* SECTION 1.5: THE APPLICATION "EL ARQUITECTO FINANCIERO" */}
+        <ArchitectApp />
 
         {/* SECTION 4: FOR WHOM? "¿PARA QUIÉN ES ESTO?" */}
         <ForWhom />
@@ -53,14 +49,14 @@ export default function App() {
         {/* SECTION 5: WHAT YOU ARE BUYING "LO QUE REALMENTE ESTÁS COMPRANDO" */}
         <WhatYouAreBuying />
 
+        {/* SECTION 5.5: IMMEDIATE ACCESS CALL TO ACTION */}
+        <AccessCallToAction />
+
         {/* SECTION 6: EXCLUSIVE BONUSES "BONOS EXCLUSIVOS" */}
         <ExclusiveBonuses />
 
         {/* SECTION 7.5: TESTIMONIALS "HISTORIAS DE TRANSFORMACIÓN..." */}
         <Testimonials />
-
-        {/* SECTION 8: SUMMARY & PURCHASE "RESUMEN DE LO QUE TE LLEVAS" + $6 checkout */}
-        <SummaryAndPurchase />
 
         {/* SECTION 9: FAQ "PREGUNTAS FRECUENTES (FAQ)" */}
         <FAQSection />
