@@ -60,7 +60,7 @@ export const copywriting = {
     highlightQuote: "El dinero se ha ido de tu cuenta bancaria en pequeñas decisiones que parecían inofensivas.",
     painStepsTitle: "LA ANESTESIA DEL PEQUEÑO GASTO",
     painSteps: ["No duele gastar $20", "No duele gastar $50", "No duele gastar $100"],
-    painRef: "No duele en el momento. Lo que duele de verdad es mirar atrás tras años de esfuerzo y ver que sigues exactamente en el mismo lugar.",
+    painRef: "No duele en el momento. Lo que duele es mirar hacia atrás después de años de esfuerzo...",
     absoluteTruthTitle: "UNA VERDAD ABSOLUTA",
     absoluteTruthBig: "Quien no sabe gestionar $1,000 tampoco sabrá gestionar $10,000.",
     absoluteTruthDesc: "El problema nunca fue cuánto dinero entra de sueldo. El problema es qué hábitos tienes para controlarlo cuando llega.",

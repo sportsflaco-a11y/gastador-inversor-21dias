@@ -31,7 +31,7 @@ export default function Navbar() {
             <div className="flex items-center cursor-pointer shrink-0" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
               <img 
                 src="https://lh3.googleusercontent.com/d/1JLotrMvCnO-liLgWfHWWPoUhkjHStw8F" 
-                alt="Inversor 21" 
+                alt="Cénit Prime" 
                 className="h-16 sm:h-18 md:h-20 w-auto object-contain rounded-xl bg-white p-1 hover:scale-105 transition-transform duration-200 border border-zinc-200 shadow-2xl"
                 referrerPolicy="no-referrer"
               />
@@ -68,7 +68,7 @@ export default function Navbar() {
             <div className="flex items-center cursor-pointer shrink-0" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
               <img 
                 src="https://lh3.googleusercontent.com/d/1JLotrMvCnO-liLgWfHWWPoUhkjHStw8F" 
-                alt="Inversor 21" 
+                alt="Cénit Prime" 
                 className="h-12 w-auto object-contain rounded-xl bg-white p-1 border border-zinc-200 shadow-xl"
                 referrerPolicy="no-referrer"
               />

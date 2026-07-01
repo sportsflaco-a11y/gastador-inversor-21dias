@@ -15,7 +15,7 @@ export default function AccessCallToAction() {
       image: null,
       highlighted: false,
       buttonText: "COMPRAR PACK PRO",
-      href: "https://pay.hotmart.com/L106244109G?checkoutMode=10&off=PRO",
+      href: "https://pay.hotmart.com/U106559885I?off=el4s2frg&checkoutMode=10",
       features: [
         { text: "El Reto de 21 Días (Ebook)", included: true },
         { text: "Bono #1: Desafío de Reprogramación", included: true },
@@ -58,7 +58,7 @@ export default function AccessCallToAction() {
       image: null,
       highlighted: false,
       buttonText: "COMPRAR PACK ELITE",
-      href: "https://pay.hotmart.com/L106244109G?checkoutMode=10&off=ELITE",
+      href: "https://pay.hotmart.com/W106561212I?off=qik94f15&checkoutMode=10",
       features: [
         { text: "El Arquitecto Financiero (App de por vida)", included: true },
         { text: "Actualizaciones de por vida gratis", included: true },

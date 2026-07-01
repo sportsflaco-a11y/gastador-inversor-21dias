@@ -20,7 +20,7 @@ export default function FinalSummary() {
             <div className="w-6 h-6 rounded bg-zinc-900 flex items-center justify-center font-bold text-zinc-400 text-xs border border-zinc-800">
               $
             </div>
-            <span>© 2026 INVERSOR21. Todos los derechos reservados.</span>
+            <span>© 2026 CÉNIT PRIME. Todos los derechos reservados.</span>
           </div>
 
           {/* Back to top dynamic button */}
