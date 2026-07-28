@@ -16,7 +16,7 @@ export default function ArchitectApp() {
         {/* Header Block */}
         <div className="text-center mb-8 space-y-4">
           <span className="text-xs font-mono font-bold text-brand tracking-widest uppercase bg-brand/10 border border-brand/20 px-4 py-1.5 rounded-full">
-            SOFTWARE REVOLUCIONARIO INCLUIDO
+            SOFTWARE REVOLUCIONARIO
           </span>
           <h2 className="font-display text-3xl sm:text-5xl font-black text-white uppercase tracking-tight">
             EL ARQUITECTO FINANCIERO

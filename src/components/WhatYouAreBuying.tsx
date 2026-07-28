@@ -21,20 +21,20 @@ export default function WhatYouAreBuying() {
           <div className="lg:col-span-12 xl:col-span-5 p-8 rounded-3xl bg-white border border-[#bce4cc] shadow-xl relative overflow-hidden group">
             <div className="absolute top-0 right-0 w-32 h-32 bg-[#ecf7f2]/40 rounded-full blur-xl pointer-events-none" />
             
-            <Badge variant="zinc">SISTEMA COMPLETO</Badge>
+            <Badge variant="zinc">EL ECOSISTEMA COMPLETO</Badge>
             <h3 className="font-display font-black text-xl sm:text-2xl text-[#092615] uppercase mt-6 mb-4">
-              LO QUE TE LLEVAS HOY
+              EL SISTEMA CENIT PRIME
             </h3>
             
             <div className="space-y-4 text-zinc-700 text-sm leading-relaxed">
               <p className="text-zinc-900 font-semibold italic">
-                "No estás comprando un libro teórico o una plantilla estática de Excel."
+                "No es un libro teórico ni una plantilla estática de Excel. Es un sistema completo con tres piezas que trabajan juntas."
               </p>
               <p className="border-l-2 border-emerald-600 pl-3 text-emerald-950 font-medium font-display">
-                Estás adquiriendo tu propio software personal de control "El Arquitecto Financiero" + el Reto de 21 días para reprogramar tus hábitos económicos.
+                Software de control "El Arquitecto Financiero" + el Reto de 21 días para reprogramar tus hábitos + los bonos de aceleración.
               </p>
               <p className="text-xs text-zinc-500">
-                Inversión única sin cargos recurrentes ni suscripciones mensuales de por vida.
+                Elige abajo con cuál pieza empezar, o consigue el sistema completo de una vez con el Pack VIP.
               </p>
             </div>
           </div>
@@ -42,7 +42,7 @@ export default function WhatYouAreBuying() {
           {/* Text Right */}
           <div className="lg:col-span-12 xl:col-span-7 space-y-6 text-left">
             <h3 className="text-lg sm:text-xl font-bold font-display text-[#092615] uppercase tracking-wider">
-              TRES PILARES CLAVE DISEÑADOS PARA FUNCIONAR EN SINTONÍA:
+              TRES PILARES QUE FUNCIONAN EN SINTONÍA — DISTRIBUIDOS EN 3 PACKS:
             </h3>
             
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
@@ -65,7 +65,10 @@ export default function WhatYouAreBuying() {
                 Crea una barrera impenetrable contra las compras compulsivas de forma inmediata.
               </p>
               <p className="text-emerald-950 font-display font-black text-base uppercase tracking-wide">
-                TE ENTREGAMOS LAS REGLAS, EL CONOCIMIENTO Y EL SOFTWARE PARA LOGRARLO.
+                TE ENTREGAMOS LAS REGLAS, EL CONOCIMIENTO Y EL SOFTWARE — TÚ ELIGES CON CUÁNTO EMPEZAR.
+              </p>
+              <p className="text-emerald-800 font-display font-bold text-xs uppercase tracking-wide pt-1">
+                ↓ Compara los 3 packs justo abajo
               </p>
             </div>
           </div>
