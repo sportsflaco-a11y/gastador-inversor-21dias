@@ -68,41 +68,6 @@ export default function Testimonials() {
           className="!mb-6"
         />
 
-        {/* Trustpilot Trust Seal Block (More Compacted) */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6 bg-zinc-900/40 border border-zinc-850 rounded-2xl p-4 max-w-xl mx-auto backdrop-blur-sm shadow-md relative overflow-hidden">
-          <div className="absolute top-0 right-0 w-16 h-16 bg-[#00b67a]/5 rounded-full blur-lg pointer-events-none" />
-          
-          <div className="flex items-center gap-2.5">
-            <div className="flex items-center justify-center w-8 h-8 rounded-md bg-[#00b67a] text-white shadow-sm">
-              <svg viewBox="0 0 100 100" className="w-4.5 h-4.5 fill-current">
-                <path d="M49.9 2.4L63.5 35l34.8.7-27.1 21.8 9.5 33.6-30.8-19.8-30.8 19.8 9.5-33.6L1.5 35.8l34.8-.7L49.9 2.4z" />
-              </svg>
-            </div>
-            <div className="text-left">
-              <span className="block font-display font-black text-sm text-white leading-none tracking-tight">Trustpilot</span>
-              <span className="text-[8px] font-mono text-zinc-500 uppercase tracking-widest font-bold block mt-0.5">Certificado Oficial</span>
-            </div>
-          </div>
-
-          <div className="hidden sm:block h-6 w-[1px] bg-zinc-800" />
-
-          <div className="flex flex-col sm:items-start text-center sm:text-left">
-            <div className="flex items-center gap-1.5 justify-center sm:justify-start">
-              <span className="text-base font-black text-white font-mono">4.8</span>
-              <span className="text-[10px] text-zinc-500 font-medium font-mono">/ 5</span>
-              <div className="flex gap-0.5 ml-1.5">
-                {[1, 2, 3, 4, 5].map((starIdx) => (
-                  <div key={starIdx} className="w-3.5 h-3.5 bg-[#00b67a] flex items-center justify-center rounded-[2px]">
-                    <svg viewBox="0 0 100 100" className="w-2.5 h-2.5 fill-white">
-                      <path d="M49.9 2.4L63.5 35l34.8.7-27.1 21.8 9.5 33.6-30.8-19.8-30.8 19.8 9.5-33.6L1.5 35.8l34.8-.7L49.9 2.4z" />
-                    </svg>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-
         {/* Testimonials Grid layout (Compact cards) */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
           {list.map((item, idx) => (

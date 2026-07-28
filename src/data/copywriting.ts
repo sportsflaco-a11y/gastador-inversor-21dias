@@ -187,7 +187,7 @@ export const copywriting = {
 
   bonuses: [
     {
-      badge: "EXCLUSIVO",
+      badge: "RETO 21 DÍAS",
       num: "Bono #1",
       title: "EL DESAFÍO DE REPROGRAMACIÓN FINANCIERA DE 21 DÍAS",
       paragraphs: [
@@ -197,7 +197,7 @@ export const copywriting = {
       visualLabel: "DESAFÍO REPROGRAMACIÓN"
     },
     {
-      badge: "AUTOMATIZADO",
+      badge: "MÉTODO SEMILLA",
       num: "Bono #2",
       title: "EL PLAN DE CONSTRUCCIÓN DE CAPITAL DE LOS PRIMEROS $1.000",
       paragraphs: [
@@ -207,7 +207,7 @@ export const copywriting = {
       visualLabel: "CONSTRUCCIÓN DE CAPITAL"
     },
     {
-      badge: "DESAFÍO",
+      badge: "MÉTODO CRECE",
       num: "Bono #3",
       title: "EL MANUAL DEL NUEVO INVERSOR",
       paragraphs: [
