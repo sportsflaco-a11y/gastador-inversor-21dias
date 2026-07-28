@@ -24,7 +24,7 @@ export interface BonusItem {
   num: string;
   title: string;
   paragraphs: string[];
-  iconName: "Trophy" | "FileSpreadsheet" | "Zap";
+  iconName: "Trophy" | "FileSpreadsheet" | "Zap" | "Brain";
   visualLabel: string;
 }
 
@@ -215,6 +215,16 @@ export const copywriting = {
       ],
       iconName: "Zap",
       visualLabel: "MANUAL INVERSOR"
+    },
+    {
+      badge: "EXCLUSIVO PACK VIP",
+      num: "Bono #4",
+      title: "EL CEREBRO DEL COMPRADOR COMPULSIVO",
+      paragraphs: [
+        "La Guía Práctica para Identificar, Interrumpir y Reprogramar los Impulsos que Vacían Tu Cuenta Bancaria — Disponible Solo en el Pack Completo VIP"
+      ],
+      iconName: "Brain",
+      visualLabel: "CEREBRO COMPRADOR"
     }
   ] as BonusItem[],
 

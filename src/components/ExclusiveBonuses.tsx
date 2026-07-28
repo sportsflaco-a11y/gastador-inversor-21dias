@@ -1,4 +1,4 @@
-import { Trophy, FileSpreadsheet, Zap, CheckCircle } from "lucide-react";
+import { Trophy, FileSpreadsheet, Zap, Brain, CheckCircle } from "lucide-react";
 import { copywriting } from "../data/copywriting";
 import { SectionHeader } from "./ui/SectionHeader";
 
@@ -6,13 +6,15 @@ const iconMap = {
   Trophy,
   FileSpreadsheet,
   Zap,
+  Brain,
 };
 
 // Match values in original component
 const bonusValues = [
   "Valor real: $10.00",
   "Valor real: $12.00",
-  "Valor real: $15.00"
+  "Valor real: $15.00",
+  "Valor real: $19.00"
 ];
 
 export default function ExclusiveBonuses() {
@@ -33,8 +35,8 @@ export default function ExclusiveBonuses() {
           className="!mb-6 sm:!mb-8"
         />
 
-        {/* Bonuses Cards in 3-column grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-6">
+        {/* Bonuses Cards in 4-column grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">
           {bonuses.map((bonus, idx) => {
             const bVal = bonusValues[idx] || "Valor real: $15.00";
             
@@ -43,13 +45,17 @@ export default function ExclusiveBonuses() {
               ? "https://lh3.googleusercontent.com/d/1Gyrju5sKr7RIFMt0OtQkgMqVegUIWgzg"
               : idx === 1 
                 ? "https://lh3.googleusercontent.com/d/1DPr26OeG6kRiqpOunrJ352KgYrfm7khq"
-                : "https://lh3.googleusercontent.com/d/1kBvUMdfn38F7W0Ilmf0s3_tWMfhpHyl-";
+                : idx === 2
+                  ? "https://lh3.googleusercontent.com/d/1kBvUMdfn38F7W0Ilmf0s3_tWMfhpHyl-"
+                  : "/bono4-cerebro-comprador.jpg";
 
             const fallbackImg = idx === 0 
               ? "/desafio-reprogramacion.jpg"
               : idx === 1 
                 ? "/plan-construccion.jpg"
-                : "/manual-inversor.jpg";
+                : idx === 2
+                  ? "/manual-inversor.jpg"
+                  : "/bono4-cerebro-comprador.jpg";
 
             return (
               <div 
@@ -99,7 +105,11 @@ export default function ExclusiveBonuses() {
                   {/* Footer metadata of each card */}
                   <div className="pt-3 border-t border-zinc-850/60 flex items-center justify-between mt-4">
                     <span className="text-[10px] text-zinc-500 font-mono font-medium">{bVal}</span>
-                    <span className="text-[10px] text-brand font-mono font-bold uppercase tracking-wider">INCLUIDO $0</span>
+                    {idx === 3 ? (
+                      <span className="text-[10px] text-[#CBFA05] font-mono font-bold uppercase tracking-wider">SOLO EN VIP</span>
+                    ) : (
+                      <span className="text-[10px] text-brand font-mono font-bold uppercase tracking-wider">INCLUIDO $0</span>
+                    )}
                   </div>
                 </div>
               </div>

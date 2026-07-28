@@ -21,6 +21,7 @@ export default function AccessCallToAction() {
         { text: "Bono #1: Desafío de Reprogramación", included: true },
         { text: "Bono #2: Plan de Construcción", included: true },
         { text: "Bono #3: Manual del Inversor", included: true },
+        { text: "Bono #4: El Cerebro del Comprador Compulsivo", included: false },
         { text: "El Arquitecto Financiero (App)", included: false },
         { text: "Soporte VIP Personalizado", included: false }
       ]
@@ -32,7 +33,7 @@ export default function AccessCallToAction() {
       price: "$12.00 USD",
       period: "Un solo pago",
       badge: "EL MÁS RECOMENDADO",
-      description: "Acceso de por vida a la aplicación El Arquitecto Financiero, el Reto completo de 21 Días, y las 3 herramientas complementarias de aceleración.",
+      description: "Acceso de por vida a la aplicación El Arquitecto Financiero, el Reto completo de 21 Días, las 3 herramientas complementarias de aceleración, y el Bono #4 exclusivo sobre la psicología del gasto compulsivo.",
       image: "https://lh3.googleusercontent.com/d/182ZQi-p_dzMxskjRr3M-XPuQzoc2wV0b",
       highlighted: true,
       buttonText: "QUIERO EL PACK COMPLETO VIP",
@@ -43,6 +44,7 @@ export default function AccessCallToAction() {
         { text: "Bono #1: Desafío de Reprogramación", included: true },
         { text: "Bono #2: Plan de Construcción", included: true },
         { text: "Bono #3: Manual del Inversor", included: true },
+        { text: "Bono #4: El Cerebro del Comprador Compulsivo (Exclusivo VIP)", included: true },
         { text: "Soporte prioritario e inmediato", included: true },
         { text: "Actualizaciones de por vida gratis", included: true }
       ]
@@ -64,7 +66,8 @@ export default function AccessCallToAction() {
         { text: "Actualizaciones de por vida gratis", included: true },
         { text: "Soporte de la plataforma", included: true },
         { text: "El Reto de 21 Días (Ebook)", included: false },
-        { text: "Los 3 bonos complementarios", included: false }
+        { text: "Los 3 bonos complementarios", included: false },
+        { text: "Bono #4: El Cerebro del Comprador Compulsivo", included: false }
       ]
     }
   ];
