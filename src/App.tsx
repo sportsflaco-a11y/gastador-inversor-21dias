@@ -16,6 +16,7 @@ import Testimonials from "./components/Testimonials";
 import FAQSection from "./components/FAQSection";
 import FinalSummary from "./components/FinalSummary";
 import SocialProofNotifications from "./components/SocialProofNotifications";
+import ExitIntentPopup from "./components/ExitIntentPopup";
 
 export default function App() {
   return (
@@ -25,6 +26,9 @@ export default function App() {
 
       {/* Social proof live notifications displayed on reaching offer section */}
       <SocialProofNotifications />
+
+      {/* Exit-intent downsell popup */}
+      <ExitIntentPopup />
 
       {/* Structural Global ambient background lights */}
       <div className="fixed top-0 left-0 right-0 h-[400px] bg-gradient-to-b from-brand/5 to-transparent pointer-events-none z-0" />
