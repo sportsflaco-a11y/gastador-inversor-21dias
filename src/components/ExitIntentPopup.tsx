@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { X, Clock } from "lucide-react";
 import { Button } from "./ui/Button";
+import { trackInitiateCheckout } from "../lib/pixel";
 
 /**
  * Exit-intent downsell popup.
@@ -112,7 +113,7 @@ export default function ExitIntentPopup() {
                 <div className="flex items-center gap-3">
                   <span className="text-zinc-600 text-xs line-through">$15</span>
                   <span className="text-brand font-black text-lg">$12</span>
-                  <Button href={DOWNSELL_LINKS.elite} variant="outline" showIcon={false} className="!px-4 !py-2 !text-xs">
+                  <Button href={DOWNSELL_LINKS.elite} variant="outline" showIcon={false} onClick={() => trackInitiateCheckout("elite", 12)} className="!px-4 !py-2 !text-xs">
                     Quiero esta
                   </Button>
                 </div>
@@ -126,7 +127,7 @@ export default function ExitIntentPopup() {
                 <div className="flex items-center gap-3">
                   <span className="text-zinc-600 text-xs line-through">$18</span>
                   <span className="text-brand font-black text-lg">$15</span>
-                  <Button href={DOWNSELL_LINKS.vip} variant="primary" showIcon={false} className="!px-4 !py-2 !text-xs">
+                  <Button href={DOWNSELL_LINKS.vip} variant="primary" showIcon={false} onClick={() => trackInitiateCheckout("vip", 15)} className="!px-4 !py-2 !text-xs">
                     Quiero esta
                   </Button>
                 </div>

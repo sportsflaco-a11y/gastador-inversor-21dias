@@ -1,6 +1,7 @@
 import { Check, X, ShieldCheck, Zap } from "lucide-react";
 import { Button } from "./ui/Button";
 import { SectionHeader } from "./ui/SectionHeader";
+import { trackInitiateCheckout, type PackId } from "../lib/pixel";
 
 export default function AccessCallToAction() {
   const packs = [
@@ -178,6 +179,7 @@ export default function AccessCallToAction() {
                   href={pack.href}
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() => trackInitiateCheckout(pack.id as PackId)}
                   className={`w-full py-3.5 !text-xs font-black uppercase tracking-wider ${
                     pack.highlighted 
                       ? "shadow-[0_0_20px_rgba(203,250,5,0.25)] hover:shadow-[0_0_30px_rgba(203,250,5,0.45)]"
