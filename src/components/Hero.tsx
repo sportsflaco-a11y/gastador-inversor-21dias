@@ -3,6 +3,7 @@ import { ShieldCheck, TrendingUp, Sparkles, ChevronRight, ArrowRight } from "luc
 import { copywriting } from "../data/copywriting";
 import { Badge } from "./ui/Badge";
 import { Button } from "./ui/Button";
+import { trackInitiateCheckout } from "../lib/pixel";
 
 export default function Hero() {
   const data = copywriting.hero;
@@ -76,6 +77,7 @@ export default function Hero() {
                 target="_blank"
                 rel="noopener noreferrer"
                 id="hero-cta" 
+                onClick={() => trackInitiateCheckout("vip")}
                 className="shadow-[0_0_30px_rgba(203,250,5,0.25)] hover:shadow-[0_0_40px_rgba(203,250,5,0.45)]"
               >
                 {data.ctaMain}

@@ -41,7 +41,7 @@ export function Button({
 
   if (href) {
     return (
-      <a href={href} id={id} target={target} rel={rel} className={`${baseClasses} ${variants[variant]} group ${className}`}>
+      <a href={href} id={id} target={target} rel={rel} onClick={onClick} className={`${baseClasses} ${variants[variant]} group ${className}`}>
         {content}
       </a>
     );
